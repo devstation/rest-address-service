@@ -28,6 +28,15 @@ public class AddressRepository {
     return nextId.getAndIncrement();
   }
 
+  public void resetId() {
+    nextId = new AtomicInteger(1);
+  }
+
+  public void clearAddresses() {
+    addressesById.clear();
+    addressesByUserId.clear();
+  }
+
   public void storeAddress(Address address) {
     addressesById.put(address.getId(), address);
     Set<Address> addresses = addressesByUserId.get(address.getUserId());

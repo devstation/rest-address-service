@@ -19,6 +19,11 @@ public class AddressService {
     return addressRepository.findByUserId(id);
   }
 
+  public void reset() {
+    addressRepository.clearAddresses();
+    addressRepository.resetId();
+  }
+
   public void storeAddress(Address address) {
     address.setId(addressRepository.nextId());
     addressRepository.storeAddress(address);

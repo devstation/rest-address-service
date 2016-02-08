@@ -25,6 +25,11 @@ public class AddressController {
     return new ResponseEntity<>("OK", HttpStatus.OK);
   }
 
+  @RequestMapping(value = "/", method = RequestMethod.GET)
+  public void reset() {
+    addressService.reset();
+  }
+
   @RequestMapping(value = "/{id}", method = RequestMethod.GET)
   public HttpEntity<Address> byId(@PathVariable int id) {
     return new ResponseEntity<>(addressService.getById(id), HttpStatus.OK);
