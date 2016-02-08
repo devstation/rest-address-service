@@ -1,3 +1,5 @@
+[![Build Status](https://semaphoreci.com/api/v1/cpelka/rest-address-service/branches/master/badge.svg)](https://semaphoreci.com/cpelka/rest-address-service)
+
 # RESt Address Service (Demo Project for Article)
 
 This project is used to setup CI/CD systems for an article about *Continuous Delivery*.
