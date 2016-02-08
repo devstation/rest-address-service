@@ -9,7 +9,7 @@
   <version>0.1-SNAPSHOT</version>
 
   <name>RESt Address Service</name>
-  <description>Article Demos - RESt Address Service</description>
+  <description>Article Demos - RESt User/Address Integration Test</description>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
