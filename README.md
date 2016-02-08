@@ -36,6 +36,6 @@ Following examples assume a local docker-machine ip of _192.168.99.100_ - you mi
 
     curl http://192.168.99.100:8080/address/user/1
 
-#### create a new user
+#### create a new address for an user
 
-    curl -X POST -H 'Content-type:application/json' --data "{\"name\":\"admin\",\"password\":\"nimda\"}" http://192.168.99.100:8080/user/create
+    curl -X POST -H 'Content-type:application/json' --data "{\"userId\":1,\"street\":\"A Street 123\",\"zip\":\"12345\", \"city\":\"A City\",\"Country\":\"A Country\"}" http://192.168.99.100:8080/address/create
