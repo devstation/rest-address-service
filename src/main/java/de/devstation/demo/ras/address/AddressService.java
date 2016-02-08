@@ -1,4 +1,4 @@
-package de.devstation.demo.ras.user;
+package de.devstation.demo.ras.address;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

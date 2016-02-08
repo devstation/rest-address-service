@@ -1,4 +1,4 @@
-package de.devstation.demo.ras.user;
+package de.devstation.demo.ras.address;
 
 import org.springframework.stereotype.Repository;
 

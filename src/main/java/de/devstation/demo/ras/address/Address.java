@@ -1,4 +1,4 @@
-package de.devstation.demo.ras.user;
+package de.devstation.demo.ras.address;
 
 public class Address {
 

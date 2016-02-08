@@ -1,7 +1,7 @@
 package de.devstation.demo.ras;
 
-import de.devstation.demo.ras.user.Address;
-import de.devstation.demo.ras.user.AddressService;
+import de.devstation.demo.ras.address.Address;
+import de.devstation.demo.ras.address.AddressService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
