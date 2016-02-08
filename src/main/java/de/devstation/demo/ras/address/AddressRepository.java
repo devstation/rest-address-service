@@ -37,7 +37,11 @@ public class AddressRepository {
     addressesByUserId.clear();
   }
 
-  public void storeAddress(Address address) {
+  public Address storeAddress(Address address) {
+    if (address.getId() != Address.UNPERSISTED_ID) {
+      throw new IllegalArgumentException("address is already persisted");
+    }
+    address.setId(nextId());
     addressesById.put(address.getId(), address);
     Set<Address> addresses = addressesByUserId.get(address.getUserId());
     if (addresses == null) {
@@ -45,6 +49,7 @@ public class AddressRepository {
     }
     addresses.add(address);
     addressesByUserId.put(address.getUserId(), addresses);
+    return address;
   }
 
 }

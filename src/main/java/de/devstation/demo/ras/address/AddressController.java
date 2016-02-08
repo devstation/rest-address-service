@@ -20,12 +20,12 @@ public class AddressController {
   private AddressService addressService;
 
   @RequestMapping(value = "/", method = RequestMethod.POST)
-  public HttpEntity<String> create(@RequestBody Address address) {
-    addressService.storeAddress(address);
-    return new ResponseEntity<>("OK", HttpStatus.OK);
+  public HttpEntity<Address> create(@RequestBody Address address) {
+    Address persistedAddress = addressService.storeAddress(address);
+    return new ResponseEntity<>(persistedAddress, HttpStatus.CREATED);
   }
 
-  @RequestMapping(value = "/", method = RequestMethod.GET)
+  @RequestMapping(value = "/reset", method = RequestMethod.GET)
   public void reset() {
     addressService.reset();
   }

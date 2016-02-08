@@ -24,9 +24,8 @@ public class AddressService {
     addressRepository.resetId();
   }
 
-  public void storeAddress(Address address) {
-    address.setId(addressRepository.nextId());
-    addressRepository.storeAddress(address);
+  public Address storeAddress(Address address) {
+    return addressRepository.storeAddress(address);
   }
 
 }

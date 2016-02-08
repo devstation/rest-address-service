@@ -2,9 +2,9 @@ package de.devstation.demo.ras.address;
 
 public class Address {
 
-  public static int UNPERSISTED_USER_ID = -1;
+  public static int UNPERSISTED_ID = -1;
 
-  private int id = UNPERSISTED_USER_ID;
+  private int id = UNPERSISTED_ID;
   private int userId;
   private String street;
   private String zip;
